@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:550;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(27, 26, 26);
+    color: white;
+    padding: 14px 36px;
+    align-items: center;
+    /* text-align: right; */
+}
+.nav{
+    list-style-type: none;
+
+}
+.bicon{
+    text-align: right;
+    order: 1;
+    display: none;
+}
+
+ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 0px;
+}
+.navbar .active{
+    background: rgb(71, 63, 63);
+    color: rgb(226, 112, 35);
+}
+
+.bodySection1{
+    height: 460px;
+    background-image: url('./images/a1.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.bodySection1 >*{
+    margin: 10px 0px;
+}
+.bodySection1 a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background-color: rgb(15, 15, 15);
+    border: 3px solid rgb(15, 15, 15);;
+    border-radius: 12px;
+}
+.bodySection1 a:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.bodySection1 h1{
+    font-size: 45px;
+    font-weight:800;
+}
+.bodySection2{
+    display: flex;
+}
+.bodySection2 img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.section2-part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 0px 30px;
+    text-align: justify;
+    
+}
+.bodySection2 button{
+    padding: 10px 30px;
+    background-color: white;
+    border: 3px solid rgb(255, 255, 255);;
+    border-radius: 12px;
+}
+.bodySection2 button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.bodySection3{
+    display: flex;
+}
+.bodySection3 .section3-part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 40px;
+    background-color:rgb(233, 185, 114);
+}
+.bodySection3 .section3-part2 p{
+    margin-top: 20px;
+}
+.bodySection3 .section3-part1 p{
+    margin-top: 20px;
+}
+.bodySection3 .section3-part1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 40px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+/* About CSS */
+.aboutMain{
+   display: flex;
+   text-align: justify;
+   justify-content: flex-start;
+   margin: 40px 0px;
+
+}
+.aboutMain .about-part1{
+    margin: 0px 50px;
+}
+
+.about-part2 .image1-About{
+    background-image: url('./images/a3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    margin-left: 30px;
+    margin-right: 250px;
+    border-radius: 200px;
+}
+.about-part1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.about-part1 h1{
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.aboutMain2{
+    background-image: url('./images/a4.png');
+    background-position: center;
+    background-size: cover;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    padding: 80px 68px;
+}
+.aboutMain2 h1{
+    color: white;
+    font-size: 36px;
+    font-weight: 800;
+}
+.review{
+    display: flex;
+    align-items: center;
+    background-color:rgb(233, 185, 114);
+    padding:10px 30px;
+}
+.review >*{
+    padding: 0px 5px;
+}
+.review img{
+    display: block; 
+}
+.review img{
+    border-radius: 70px;
+}
+
+/* Contact CSS */
+.form-container{
+    padding: 35px 90px;
+    
+}
+form input[type=text],input[type=email],textarea{
+    width: 100%;
+    border: 1px solid rgb(192, 190, 190);
+    font-size: 18px;
+    padding: 3px;
+}
+form div{
+    margin: 15px 0px;
+}
+form input[type=submit]{
+    padding: 10px 15px;
+    color: white;
+    background-color: rgb(24, 22, 22);
+    border: none;
+    font-size: 16px;
+}
+
+.prefooter-container{
+    background-color: rgb(24, 22, 22);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 50px 0px;
+}
+.pfcitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* css for small screen laptop */
+@media only screen and (max-width:990px) {
+    .bodySection2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section2-part2{
+        padding: 20px 10px;    
+    }
+    .section2-part2 >*{
+        margin: 10px 0px;
+    }
+    .bodySection1 p{
+        margin:0px 32px;
+    }
+}
+/* css for tab */
+@media only screen and (max-width:768px) {
+    .bodySection3 .section3-part2{
+        padding: 12px 18px;
+    }
+    .bodySection3 .section3-part1{
+        padding: 12px 18px;
+    }
+    .aboutMain2{
+        height: 600px;
+        padding: 20px 10px;
+    }
+    .about-part2 .image1-About{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+
+    
+}
+
+/* css for phone */
+@media only screen and (max-width:480px) {
+    body{
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .bodySection3{
+        flex-direction: column;
+    }
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .bicon{
+        display: block;
+    }
+    ul li{
+        display: block;
+    }
+    .navbar a{
+        text-decoration: none;
+        padding: 10px 0px;
+    }
+    .nav{
+        display: none;
+    }
+    .bodySection1{
+        height: 400px;
+    }
+    .bodySection1 a{
+        padding: 8px 20px;
+    }
+    .bodySection1 h1{
+        font-size: 24px;
+    }
+    .aboutMain2 h1{
+        font-size: 26px;
+        font-weight: bolder;
+    }
+    .aboutMain2{
+        height: 700px;
+    }
+    .review{
+        flex-direction: column;
+        padding:20px;
+    }
+    .form-container{
+        padding: 23px;
+        
+    }
+    .prefooter-container{
+        flex-direction: column;
+    }
+    .prefooter-container >*{
+        margin: 20px 0px;
+    }
+    .toggleClass{
+        display: block;
+    }
+    .navItem{
+        margin-bottom: 10px;
+    }
+}
+
+/* css for special cases */
+@media only screen and (max-width:1176px){
+    .aboutMain{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-part2{
+        margin-top: 20px;
+    }
+}

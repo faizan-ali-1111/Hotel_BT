@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Hotel BT | Home</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h2>HBT</h2>
+        </div>
+        <div onclick="toggle()" class="bicon">&#9776;</div>
+        <div class="navbar">
+            <ul id="burger" class="nav">
+                <a href="./index.html" class="active"><li class="navItem">Home</li></a>
+                <a href="./about.html"><li class="navItem">About</li></a>
+                <a href="./contact.html"><li class="navItem">Contact</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="bodySection">
+        <div class="bodySection1">
+            <h1><span style="color: rgb(255, 145, 0);">Enjoy&nbsp;</span>Your Stay</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt sunt voluptas dolorem nisi quo alias.
+            </p>
+            <a href="./about.html">About Our Hotel</a>
+        </div>
+        <div class="bodySection2">
+            <div class="section2-part1">
+                <img src="./images/a2.jpg" alt="">
+            </div>
+            <div class="section2-part2">
+                <h3><span style="color: rgb(255, 145, 0);">The History&nbsp;</span>Of Our Hotel</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia 
+                deserunt provident omnis et assumenda dolorem illo quaerat ex soluta 
+                ratione qui in repellat excepturi, eos aspernatur officia aliquam impedit deleniti vitae 
+                voluptatibus distinctio numquam reiciendis molestias! Porro, maiores.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia 
+                deserunt provident omnis et assumenda dolorem illo quaerat ex soluta 
+                ratione qui in repellat excepturi, eos aspernatur officia aliquam impedit deleniti vitae 
+                voluptatibus distinctio numquam reiciendis molestias! Porro, maiores.
+                ratione qui in repellat excepturi, eos aspernatur officia aliquam impedit deleniti vitae 
+                voluptatibus distinctio numquam reiciendis molestias! Porro, maiores.
+            </p>
+            <button>Read More</button>
+            </div>
+        </div>
+        <div class="bodySection3">
+            <div class="section3-part1">
+                <div class="icon">
+                    <img src="./images/house.png" width="50px" height="50px" alt="">
+                </div>
+                <h3 class="iconname">
+                    Great Location
+                </h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Pariatur ipsa aperiam corporis dolor quo neque aspernatur.
+                </p>
+            </div>
+            <div class="section3-part2">
+                <div class="icon">
+                    <img src="./images/food.png" width="50px" height="50px" alt="">
+                </div>
+                <h3 class="iconname">
+                    Free Meals
+                </h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Pariatur ipsa aperiam corporis dolor quo neque aspernatur.
+                </p>
+            </div>
+            <div class="section3-part1">
+                <div class="icon">
+                    <img src="./images/weight.png" width="50px" height="50px" alt="">
+                </div>
+                <h3 class="iconname">
+                    Fitness Room
+                </h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Pariatur ipsa aperiam corporis dolor quo neque aspernatur.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Hotel BT &copy; 2022, All Rights Reserved</p>
+    </div>
+
+    <script>
+        function toggle(){
+            var x=document.getElementById('burger')
+            if(x.className=="nav"){
+                x.className += " toggleClass"
+            }
+            else{
+                x.className="nav"
+            }
+        }
+    </script>
+
+
+</body>
+</html>

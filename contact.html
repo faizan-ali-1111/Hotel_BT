@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel BT | Contact Us</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h2>HBT</h2>
+        </div>
+        <div onclick="toggle()" class="bicon">&#9776;</div>
+        <div class="navbar">
+            <ul id="burger" class="nav">
+                <a href="./index.html" ><li class="navItem">Home</li></a>
+                <a href="./about.html"><li class="navItem">About</li></a>
+                <a href="./contact.html" class="active"><li class="navItem">Contact</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="form-container">
+        <form action="" class="contact-from">
+                <h1><span style="color: rgb(255, 145, 0);">Contact&nbsp;</span>Us</h1><br>
+                <h3>Please fill out the form below to contact us</h3>
+                
+                <div>
+                    <label>Name</label>
+                    <br>
+                    <input type="text" name="fname" id="name">
+                </div>
+                
+                <div>
+                    <label>Email</label>
+                    <br>
+                    <input type="email" name="email" id="name" >
+                </div>
+                
+                <div>
+                    <label>Message</label>
+                    <br>
+                    <textarea name="" id="" cols="30" rows="7"></textarea>
+                </div>
+                <div>
+                    <br>
+                    <input type="submit" value="Submit" name="submit" id="submit">
+                    <br>
+                </div>
+        </form>
+    </div>
+    <div class="prefooter-container">
+        <div class="pfcitem">
+            <img src="./images/house1.png" width="50px" alt="">
+            <h3>Location</h3>
+            <br>
+            <h4>50 Main st, Boston MA</h4>
+        </div>
+        <div class="pfcitem">
+            <img src="./images/phone-call1.png" width="50px" alt="">
+            <h3>Phone Number</h3>
+            <br>
+            <h4>(617)-555-5555</h4>
+        </div>
+        <div class="pfcitem">
+            <img src="./images/email.png" width="50px" alt="">
+            <h3>Email Address</h3>
+            <br>
+            <h4>frontdest@hotelbt.co</h4>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Hotel BT &copy; 2022, All Rights Reserved</p>
+    </div>
+    <script>
+        function toggle(){
+            var x=document.getElementById('burger')
+            if(x.className=="nav"){
+                x.className += " toggleClass"
+            }
+            else{
+                x.className="nav"
+            }
+        }
+    </script>
+</body>
+</html>
