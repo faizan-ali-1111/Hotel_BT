@@ -33,7 +33,7 @@ ul li{
 .navbar a{
     text-decoration: none;
     color: white;
-    padding: 20px 0px;
+    padding: 19px 0px;
 }
 .navbar .active{
     background: rgb(71, 63, 63);
